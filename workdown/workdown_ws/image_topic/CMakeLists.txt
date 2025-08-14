@@ -22,3 +22,22 @@ if(BUILD_TESTING)
 endif()
 
 ament_package()
+
+find_package(rclcpp REQUIRED)
+find_package(sensor_msgs REQUIRED)
+
+add_executable(Image_Topic_Publisher src/publisher.cpp)
+add_executable(Image_Topic_Subscribe src/subscribe.cpp)
+
+ament_target_dependencies(Image_Topic_Publisher rclcpp sensor_msgs)
+ament_target_dependencies(Image_Topic_Subscribe rclcpp)
+
+install(TARGETS
+  Image_Topic_Publisher
+  DESTINATION lib/${PRJECT_NAME}
+)
+
+install(TARGETS
+  Image_Topic_Subscribe
+  DESTINATION lib/${PROJECT_NAME}
+)
