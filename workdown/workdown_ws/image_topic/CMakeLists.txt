@@ -34,7 +34,7 @@ ament_target_dependencies(Image_Topic_Subscribe rclcpp)
 
 install(TARGETS
   Image_Topic_Publisher
-  DESTINATION lib/${PRJECT_NAME}
+  DESTINATION lib/${PROJECT_NAME}
 )
 
 install(TARGETS
