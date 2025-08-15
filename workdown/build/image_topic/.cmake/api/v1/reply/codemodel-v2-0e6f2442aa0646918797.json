@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-459e1d910dfafa803cdb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "image_topic",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Image_Topic_Publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Image_Topic_Publisher-d58b29371d9c176a3dc4.json",
+					"name" : "Image_Topic_Publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Image_Topic_Subscribe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Image_Topic_Subscribe-cead0c4ee926c10a5665.json",
+					"name" : "Image_Topic_Subscribe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "image_topic_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-image_topic_uninstall-9728ed11a75cb8794719.json",
+					"name" : "image_topic_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-5875df61e20f9f193f3a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/vboxuser/robot/workdown/build/image_topic",
+		"source" : "/home/vboxuser/robot/workdown/workdown_ws/image_topic"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
