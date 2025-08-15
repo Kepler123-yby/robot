@@ -26,6 +26,8 @@ ament_package()
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(aim_interfaces REQUIRED)
+find_package(OpenCV REQUIRED)
+find_package(cv_bridge REQUIRED)
 
 add_executable(Image_Topic_Publisher src/publisher.cpp)
 add_executable(Image_Topic_Subscribe src/subscribe.cpp)
@@ -33,8 +35,8 @@ add_executable(Image_Topic_Subscribe src/subscribe.cpp)
 target_include_directories(Image_Topic_Subscribe PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include> $<INSTALL_INTERFACE:include>)
 target_compile_features(Image_Topic_Subscribe  PUBLIC c_std_99 cxx_std_17)
 
-ament_target_dependencies(Image_Topic_Publisher rclcpp sensor_msgs)
-ament_target_dependencies(Image_Topic_Subscribe "rclcpp" "aim_interfaces")
+ament_target_dependencies(Image_Topic_Publisher rclcpp sensor_msgs cv_bridge OpenCV)
+ament_target_dependencies(Image_Topic_Subscribe "rclcpp" "aim_interfaces" cv_bridge OpenCV)
 
 
 
