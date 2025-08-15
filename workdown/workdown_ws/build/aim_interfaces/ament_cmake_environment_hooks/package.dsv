@@ -1,0 +1,4 @@
+source;share/aim_interfaces/local_setup.bash
+source;share/aim_interfaces/local_setup.dsv
+source;share/aim_interfaces/local_setup.sh
+source;share/aim_interfaces/local_setup.zsh

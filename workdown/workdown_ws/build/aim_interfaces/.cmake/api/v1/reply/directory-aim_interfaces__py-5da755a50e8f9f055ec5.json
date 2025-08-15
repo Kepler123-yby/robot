@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "aim_interfaces__py",
+		"source" : "/home/vboxuser/robot/workdown/workdown_ws/build/aim_interfaces/aim_interfaces__py"
+	}
+}

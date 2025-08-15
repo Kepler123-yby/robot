@@ -1,0 +1,6 @@
+{
+  "package_name": "aim_interfaces",
+  "non_idl_tuples": [
+    "/home/vboxuser/robot/workdown/workdown_ws/aim_interfaces:msg/AimInfo.msg"
+  ]
+}
