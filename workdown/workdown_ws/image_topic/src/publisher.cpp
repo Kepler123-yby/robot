@@ -1,5 +1,8 @@
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/image.hpp"
+#include <opencv2/opencv.hpp>
+#include <cv_bridge/cv_bridge.h>
+using namespace cv;
 
 class ImageTopicPublisher : public rclcpp::Node{
 
@@ -13,7 +16,14 @@ private:
     rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr sensor_img;
     rclcpp::TimerBase::SharedPtr time;
     void timer_callback(){
-
+        Mat image = imread("workdown/workdown_ws/picture/output.png",IMREAD_COLOR);
+        if (image.empty()){
+      RCLCPP_WARN(this->get_logger(), "图片读取失败，请检查路径！");
+      return;
+    }
+        auto picture = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", image).toImageMsg();
+        sensor_img->publish(*picture);
+        RCLCPP_DEBUG(this->get_logger(), "已发布图片消息");
     }
 };
 
