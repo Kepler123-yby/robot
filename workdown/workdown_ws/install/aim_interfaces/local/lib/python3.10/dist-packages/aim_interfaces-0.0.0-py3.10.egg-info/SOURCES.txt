@@ -1,0 +1,8 @@
+setup.py
+aim_interfaces/__init__.py
+aim_interfaces.egg-info/PKG-INFO
+aim_interfaces.egg-info/SOURCES.txt
+aim_interfaces.egg-info/dependency_links.txt
+aim_interfaces.egg-info/top_level.txt
+aim_interfaces/msg/__init__.py
+aim_interfaces/msg/_aim_info.py
