@@ -1,0 +1,26 @@
+[0.014s] Invoking command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/robot/workdown/workdown_ws/build/image_topic -- -j4 -l4
+[0.068s] [35m[1mConsolidate compiler generated dependencies of target Image_Topic_Publisher[0m
+[0.068s] [35m[1mConsolidate compiler generated dependencies of target Image_Topic_Subscribe[0m
+[0.096s] [ 50%] Built target Image_Topic_Subscribe
+[0.102s] [100%] Built target Image_Topic_Publisher
+[0.120s] Invoked command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/robot/workdown/workdown_ws/build/image_topic -- -j4 -l4
+[0.133s] Invoking command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/robot/workdown/workdown_ws/build/image_topic
+[0.143s] -- Install configuration: ""
+[0.143s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/package_run_dependencies/image_topic
+[0.144s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/parent_prefix_path/image_topic
+[0.144s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/ament_prefix_path.sh
+[0.144s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/ament_prefix_path.dsv
+[0.144s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/path.sh
+[0.144s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/path.dsv
+[0.144s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.bash
+[0.144s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.sh
+[0.145s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.zsh
+[0.145s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.dsv
+[0.145s] -- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/package.dsv
+[0.145s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/packages/image_topic
+[0.146s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/cmake/image_topicConfig.cmake
+[0.146s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/cmake/image_topicConfig-version.cmake
+[0.146s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/package.xml
+[0.146s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/Image_Topic_Publisher
+[0.146s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_Topic_Subscribe
+[0.148s] Invoked command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/robot/workdown/workdown_ws/build/image_topic

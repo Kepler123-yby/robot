@@ -1,0 +1,22 @@
+[0.023s] Invoking command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic': AMENT_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/vboxuser/robot/workdown/workdown_ws/build/image_topic -- -j4 -l4
+[0.093s] [35m[1mConsolidate compiler generated dependencies of target Image_Topic_Subscribe[0m
+[0.093s] [35m[1mConsolidate compiler generated dependencies of target Image_Topic_Publisher[0m
+[0.113s] [ 25%] [32mBuilding CXX object CMakeFiles/Image_Topic_Subscribe.dir/src/subscribe.cpp.o[0m
+[0.115s] [ 50%] [32mBuilding CXX object CMakeFiles/Image_Topic_Publisher.dir/src/publisher.cpp.o[0m
+[2.406s] [01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:13:55:[m[K [01;31m[Kerror: [m[Kinvalid use of qualified-name ‘[01m[Kstd::shared_ptr<rclcpp::Node>::aim_target[m[K’
+[2.408s]    13 |     rclcpp::Subscription<aim_interfaces::msg::AimInfo>[01;31m[KSharedPtr[m[K::aim_target;
+[2.408s]       |                                                       [01;31m[K^~~~~~~~~[m[K
+[2.417s] [01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:[m[K In constructor ‘[01m[KImageTopicSubscribe::ImageTopicSubscribe(std::string)[m[K’:
+[2.417s] [01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:9:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kaim_target[m[K’ was not declared in this scope
+[2.418s]     9 |         [01;31m[Kaim_target[m[K = this->create_subscription<aim_interfaces::msg::AimInfo>("aim",10,std::bind(&ImageTopicSubscribe::aim_callback,this,placeholders::_1));
+[2.418s]       |         [01;31m[K^~~~~~~~~~[m[K
+[2.418s] [01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:9:137:[m[K [01;31m[Kerror: [m[K‘[01m[Kplaceholders[m[K’ has not been declared
+[2.418s]     9 |         aim_target = this->create_subscription<aim_interfaces::msg::AimInfo>("aim",10,std::bind(&ImageTopicSubscribe::aim_callback,this,[01;31m[Kplaceholders[m[K::_1));
+[2.418s]       |                                                                                                                                         [01;31m[K^~~~~~~~~~~~[m[K
+[2.920s] gmake[2]: *** [CMakeFiles/Image_Topic_Subscribe.dir/build.make:76：CMakeFiles/Image_Topic_Subscribe.dir/src/subscribe.cpp.o] 错误 1
+[2.920s] gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/Image_Topic_Subscribe.dir/all] 错误 2
+[2.920s] gmake[1]: *** 正在等待未完成的任务....
+[4.227s] [ 75%] [32m[1mLinking CXX executable Image_Topic_Publisher[0m
+[4.468s] [ 75%] Built target Image_Topic_Publisher
+[4.470s] gmake: *** [Makefile:146：all] 错误 2
+[4.474s] Invoked command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic' returned '2': AMENT_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/vboxuser/robot/workdown/workdown_ws/build/image_topic -- -j4 -l4

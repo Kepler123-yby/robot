@@ -1,0 +1,33 @@
+[0.012s] Invoking command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic': AMENT_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/vboxuser/robot/workdown/workdown_ws/build/image_topic -- -j4 -l4
+[0.060s] [35m[1mConsolidate compiler generated dependencies of target Image_Topic_Subscribe[0m
+[0.103s] [ 50%] Built target Image_Topic_Publisher
+[0.106s] [ 75%] [32mBuilding CXX object CMakeFiles/Image_Topic_Subscribe.dir/src/subscribe.cpp.o[0m
+[3.671s] [01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:[m[K In member function ‘[01m[Kvoid ImageTopicSubscribe::aim_callback(aim_interfaces::msg::AimInfo_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.671s] [01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:16:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.672s]    16 |     void aim_callback([01;35m[Kconst aim_interfaces::msg::AimInfo::SharedPtr msg[m[K){
+[3.672s]       |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[10.029s] [100%] [32m[1mLinking CXX executable Image_Topic_Subscribe[0m
+[10.425s] [100%] Built target Image_Topic_Subscribe
+[10.442s] Invoked command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic' returned '0': AMENT_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/vboxuser/robot/workdown/workdown_ws/build/image_topic -- -j4 -l4
+[10.443s] Invoking command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic': AMENT_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/vboxuser/robot/workdown/workdown_ws/build/image_topic
+[10.456s] -- Install configuration: ""
+[10.456s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/package_run_dependencies/image_topic
+[10.456s] -- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/parent_prefix_path/image_topic
+[10.458s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/ament_prefix_path.sh
+[10.458s] -- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/ament_prefix_path.dsv
+[10.458s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/path.sh
+[10.460s] -- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/path.dsv
+[10.460s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.bash
+[10.460s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.sh
+[10.460s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.zsh
+[10.461s] -- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.dsv
+[10.461s] -- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/package.dsv
+[10.461s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/packages/image_topic
+[10.461s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/cmake/image_topicConfig.cmake
+[10.462s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/cmake/image_topicConfig-version.cmake
+[10.462s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/package.xml
+[10.463s] -- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_Topic_Publisher
+[10.466s] -- Set runtime path of "/home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_Topic_Publisher" to ""
+[10.472s] -- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_Topic_Subscribe
+[10.479s] -- Set runtime path of "/home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_Topic_Subscribe" to ""
+[10.483s] Invoked command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic' returned '0': AMENT_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/vboxuser/robot/workdown/workdown_ws/build/image_topic

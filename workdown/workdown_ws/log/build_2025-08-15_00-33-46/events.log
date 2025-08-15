@@ -1,0 +1,82 @@
+[0.000000] (-) TimerEvent: {}
+[0.000682] (-) JobUnselected: {'identifier': 'aim_interfaces'}
+[0.000727] (image_topic) JobQueued: {'identifier': 'image_topic', 'dependencies': OrderedDict([('aim_interfaces', '/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces')])}
+[0.000750] (image_topic) JobStarted: {'identifier': 'image_topic'}
+[0.015006] (image_topic) JobProgress: {'identifier': 'image_topic', 'progress': 'cmake'}
+[0.018059] (image_topic) JobProgress: {'identifier': 'image_topic', 'progress': 'build'}
+[0.018279] (image_topic) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic', '--', '-j4', '-l4'], 'cwd': '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'vboxuser'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vboxuser'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.101.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2568'), ('SYSTEMD_EXEC_PID', '2719'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3266'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vboxuser'), ('JOURNAL_STREAM', '8:12910'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig::/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubantu22:@/tmp/.ICE-unix/2690,unix/ubantu22:/tmp/.ICE-unix/2690'), ('INVOCATION_ID', '4e2131b5a1dc4025af409044c6e1e7b0'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JLHBB3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-75bd82cd6d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.106778] (image_topic) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target Image_Topic_Publisher\x1b[0m\n'}
+[0.107059] (-) TimerEvent: {}
+[0.107261] (image_topic) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target Image_Topic_Subscribe\x1b[0m\n'}
+[0.120422] (image_topic) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/Image_Topic_Subscribe.dir/src/subscribe.cpp.o\x1b[0m\n'}
+[0.122427] (image_topic) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/Image_Topic_Publisher.dir/src/publisher.cpp.o\x1b[0m\n'}
+[0.420857] (-) TimerEvent: {}
+[0.525288] (-) TimerEvent: {}
+[0.808542] (-) TimerEvent: {}
+[0.918488] (-) TimerEvent: {}
+[1.023198] (-) TimerEvent: {}
+[1.125440] (-) TimerEvent: {}
+[1.226693] (-) TimerEvent: {}
+[1.329211] (-) TimerEvent: {}
+[1.431320] (-) TimerEvent: {}
+[1.532692] (-) TimerEvent: {}
+[1.634804] (-) TimerEvent: {}
+[1.735507] (-) TimerEvent: {}
+[1.842631] (-) TimerEvent: {}
+[1.943420] (-) TimerEvent: {}
+[2.044486] (-) TimerEvent: {}
+[2.148154] (-) TimerEvent: {}
+[2.248732] (-) TimerEvent: {}
+[2.350739] (-) TimerEvent: {}
+[2.451330] (-) TimerEvent: {}
+[2.552182] (-) TimerEvent: {}
+[2.656212] (-) TimerEvent: {}
+[2.761921] (-) TimerEvent: {}
+[2.778470] (image_topic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:13:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of qualified-name \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Node>::aim_target\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.778725] (image_topic) StderrLine: {'line': b'   13 |     rclcpp::Subscription<aim_interfaces::msg::AimInfo>\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K::aim_target;\n'}
+[2.778841] (image_topic) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.787672] (image_topic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KImageTopicSubscribe::ImageTopicSubscribe(std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.787875] (image_topic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:9:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kaim_target\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.787962] (image_topic) StderrLine: {'line': b'    9 |         \x1b[01;31m\x1b[Kaim_target\x1b[m\x1b[K = this->create_subscription<aim_interfaces::msg::AimInfo>("aim",10);\n'}
+[2.788015] (image_topic) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.788066] (image_topic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:9:77:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KImageTopicSubscribe::create_subscription<aim_interfaces::msg::AimInfo>(const char [4], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.788117] (image_topic) StderrLine: {'line': b'    9 |         aim_target = \x1b[01;31m\x1b[Kthis->create_subscription<aim_interfaces::msg::AimInfo>("aim",10)\x1b[m\x1b[K;\n'}
+[2.788162] (image_topic) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.800223] (image_topic) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.800449] (image_topic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.800527] (image_topic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.800580] (image_topic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:1\x1b[m\x1b[K:\n'}
+[2.800630] (image_topic) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.800692] (image_topic) StderrLine: {'line': b'  219 |   \x1b[01;36m\x1b[Kcreate_subscription\x1b[m\x1b[K(\n'}
+[2.800738] (image_topic) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.800789] (image_topic) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.805803] (image_topic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:9:77:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 5 arguments, 2 provided\n'}
+[2.806276] (image_topic) StderrLine: {'line': b'    9 |         aim_target = \x1b[01;36m\x1b[Kthis->create_subscription<aim_interfaces::msg::AimInfo>("aim",10)\x1b[m\x1b[K;\n'}
+[2.806389] (image_topic) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.865141] (-) TimerEvent: {}
+[2.966617] (-) TimerEvent: {}
+[3.067067] (-) TimerEvent: {}
+[3.169491] (-) TimerEvent: {}
+[3.271124] (-) TimerEvent: {}
+[3.296397] (image_topic) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/Image_Topic_Subscribe.dir/build.make:76\xef\xbc\x9aCMakeFiles/Image_Topic_Subscribe.dir/src/subscribe.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[3.297390] (image_topic) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165\xef\xbc\x9aCMakeFiles/Image_Topic_Subscribe.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[3.297549] (image_topic) StderrLine: {'line': b'gmake[1]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[3.371307] (-) TimerEvent: {}
+[3.494287] (-) TimerEvent: {}
+[3.599086] (-) TimerEvent: {}
+[3.720044] (-) TimerEvent: {}
+[3.822916] (-) TimerEvent: {}
+[3.925165] (-) TimerEvent: {}
+[4.034453] (-) TimerEvent: {}
+[4.136255] (-) TimerEvent: {}
+[4.238858] (-) TimerEvent: {}
+[4.340227] (-) TimerEvent: {}
+[4.447835] (-) TimerEvent: {}
+[4.462875] (image_topic) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable Image_Topic_Publisher\x1b[0m\n'}
+[4.548247] (-) TimerEvent: {}
+[4.650348] (-) TimerEvent: {}
+[4.681602] (image_topic) StdoutLine: {'line': b'[ 75%] Built target Image_Topic_Publisher\n'}
+[4.683537] (image_topic) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[4.689394] (image_topic) CommandEnded: {'returncode': 2}
+[4.701371] (image_topic) JobEnded: {'identifier': 'image_topic', 'rc': 2}
+[4.702879] (-) EventReactorShutdown: {}

@@ -1,0 +1,24 @@
+In file included from [01m[K/home/vboxuser/robot/workdown/workdown_ws/build/aim_interfaces/rosidl_generator_c/aim_interfaces/msg/detail/aim_info__functions.h:19[m[K,
+                 from [01m[K/home/vboxuser/robot/workdown/workdown_ws/build/aim_interfaces/rosidl_generator_c/aim_interfaces/msg/detail/aim_info__functions.c:4[m[K:
+[01m[K/home/vboxuser/robot/workdown/workdown_ws/build/aim_interfaces/rosidl_generator_c/aim_interfaces/msg/detail/aim_info__struct.h:23:10:[m[K [01;31m[Kfatal error: [m[Kaim_interfaces/msg/detail/int16__struct.h: 没有那个文件或目录
+   23 | #include [01;31m[K"aim_interfaces/msg/detail/int16__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/aim_interfaces__rosidl_generator_c.dir/build.make:167：CMakeFiles/aim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aim_interfaces/msg/detail/aim_info__functions.c.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:213：CMakeFiles/aim_interfaces__rosidl_generator_c.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+In file included from [01m[K/home/vboxuser/robot/workdown/workdown_ws/build/aim_interfaces/rosidl_typesupport_cpp/aim_interfaces/msg/aim_info__type_support.cpp:7[m[K:
+[01m[K/home/vboxuser/robot/workdown/workdown_ws/build/aim_interfaces/rosidl_generator_cpp/aim_interfaces/msg/detail/aim_info__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Kaim_interfaces/msg/detail/int16__struct.hpp: 没有那个文件或目录
+   21 | #include [01;31m[K"aim_interfaces/msg/detail/int16__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/aim_interfaces__rosidl_typesupport_cpp.dir/build.make:148：CMakeFiles/aim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aim_interfaces/msg/aim_info__type_support.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:395：CMakeFiles/aim_interfaces__rosidl_typesupport_cpp.dir/all] 错误 2
+In file included from [01m[K/home/vboxuser/robot/workdown/workdown_ws/build/aim_interfaces/rosidl_typesupport_introspection_cpp/aim_interfaces/msg/detail/aim_info__type_support.cpp:12[m[K:
+[01m[K/home/vboxuser/robot/workdown/workdown_ws/build/aim_interfaces/rosidl_generator_cpp/aim_interfaces/msg/detail/aim_info__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Kaim_interfaces/msg/detail/int16__struct.hpp: 没有那个文件或目录
+   21 | #include [01;31m[K"aim_interfaces/msg/detail/int16__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/aim_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make:153：CMakeFiles/aim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aim_interfaces/msg/detail/aim_info__type_support.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:369：CMakeFiles/aim_interfaces__rosidl_typesupport_introspection_cpp.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,4 @@
+[01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:[m[K In member function ‘[01m[Kvoid ImageTopicSubscribe::aim_callback(aim_interfaces::msg::AimInfo_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:16:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 |     void aim_callback([01;35m[Kconst aim_interfaces::msg::AimInfo::SharedPtr msg[m[K){
+      |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K

@@ -1,0 +1,29 @@
+[35m[1mConsolidate compiler generated dependencies of target Image_Topic_Subscribe[0m
+[ 50%] Built target Image_Topic_Publisher
+[ 75%] [32mBuilding CXX object CMakeFiles/Image_Topic_Subscribe.dir/src/subscribe.cpp.o[0m
+[01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:[m[K In member function ‘[01m[Kvoid ImageTopicSubscribe::aim_callback(aim_interfaces::msg::AimInfo_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:16:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 |     void aim_callback([01;35m[Kconst aim_interfaces::msg::AimInfo::SharedPtr msg[m[K){
+      |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[100%] [32m[1mLinking CXX executable Image_Topic_Subscribe[0m
+[100%] Built target Image_Topic_Subscribe
+-- Install configuration: ""
+-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/package_run_dependencies/image_topic
+-- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/parent_prefix_path/image_topic
+-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/ament_prefix_path.sh
+-- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/path.sh
+-- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/path.dsv
+-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.bash
+-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.sh
+-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.zsh
+-- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.dsv
+-- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/package.dsv
+-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/packages/image_topic
+-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/cmake/image_topicConfig.cmake
+-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/cmake/image_topicConfig-version.cmake
+-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/package.xml
+-- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_Topic_Publisher
+-- Set runtime path of "/home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_Topic_Publisher" to ""
+-- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_Topic_Subscribe
+-- Set runtime path of "/home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_Topic_Subscribe" to ""

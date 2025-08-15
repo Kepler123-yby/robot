@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target Image_Topic_Subscribe[0m
+[ 50%] Built target Image_Topic_Publisher
+[ 75%] [32mBuilding CXX object CMakeFiles/Image_Topic_Subscribe.dir/src/subscribe.cpp.o[0m
+[01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:[m[K In constructor ‘[01m[KImageTopicSubscribe::ImageTopicSubscribe(std::string)[m[K’:
+[01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:9:136:[m[K [01;31m[Kerror: [m[K‘[01m[Kplaceholders[m[K’ has not been declared
+    9 |         aim_target =this->create_subscription<aim_interfaces::msg::AimInfo>("aim",10,std::bind(&ImageTopicSubscribe::aim_callback,this,[01;31m[Kplaceholders[m[K::_1));
+      |                                                                                                                                        [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/Image_Topic_Subscribe.dir/build.make:76：CMakeFiles/Image_Topic_Subscribe.dir/src/subscribe.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/Image_Topic_Subscribe.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

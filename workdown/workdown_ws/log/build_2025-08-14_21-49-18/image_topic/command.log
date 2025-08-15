@@ -1,0 +1,4 @@
+Invoking command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/robot/workdown/workdown_ws/build/image_topic -- -j4 -l4
+Invoked command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/robot/workdown/workdown_ws/build/image_topic -- -j4 -l4
+Invoking command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/robot/workdown/workdown_ws/build/image_topic
+Invoked command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/robot/workdown/workdown_ws/build/image_topic

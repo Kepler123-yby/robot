@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target Image_Topic_Subscribe[0m
+[35m[1mConsolidate compiler generated dependencies of target Image_Topic_Publisher[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/Image_Topic_Subscribe.dir/src/subscribe.cpp.o[0m
+[ 75%] Built target Image_Topic_Publisher

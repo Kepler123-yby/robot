@@ -1,0 +1,12 @@
+[31mCMake Error at CMakeLists.txt:35 (install):
+  Syntax error in cmake code at
+
+    /home/vboxuser/robot/workdown/workdown_ws/image_topic/CMakeLists.txt:37
+
+  when parsing string
+
+    ${lib/{PROJECT_NAME}
+
+  Invalid character ('{') in a variable name: 'lib/'
+
+[0m

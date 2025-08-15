@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target Image_Topic_Subscribe[0m
+[35m[1mConsolidate compiler generated dependencies of target Image_Topic_Publisher[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/Image_Topic_Subscribe.dir/src/subscribe.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/Image_Topic_Publisher.dir/src/publisher.cpp.o[0m
+[01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:13:55:[m[K [01;31m[Kerror: [m[Kinvalid use of qualified-name ‘[01m[Kstd::shared_ptr<rclcpp::Node>::aim_target[m[K’
+   13 |     rclcpp::Subscription<aim_interfaces::msg::AimInfo>[01;31m[KSharedPtr[m[K::aim_target;
+      |                                                       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:[m[K In constructor ‘[01m[KImageTopicSubscribe::ImageTopicSubscribe(std::string)[m[K’:
+[01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:9:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kaim_target[m[K’ was not declared in this scope
+    9 |         [01;31m[Kaim_target[m[K = this->create_subscription<aim_interfaces::msg::AimInfo>("aim",10,std::bind(&ImageTopicSubscribe::aim_callback,this,placeholders::_1));
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/subscribe.cpp:9:137:[m[K [01;31m[Kerror: [m[K‘[01m[Kplaceholders[m[K’ has not been declared
+    9 |         aim_target = this->create_subscription<aim_interfaces::msg::AimInfo>("aim",10,std::bind(&ImageTopicSubscribe::aim_callback,this,[01;31m[Kplaceholders[m[K::_1));
+      |                                                                                                                                         [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/Image_Topic_Subscribe.dir/build.make:76：CMakeFiles/Image_Topic_Subscribe.dir/src/subscribe.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/Image_Topic_Subscribe.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+[ 75%] [32m[1mLinking CXX executable Image_Topic_Publisher[0m
+[ 75%] Built target Image_Topic_Publisher
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,49 @@
+[0.014s] Invoking command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vboxuser/robot/workdown/workdown_ws/image_topic -DCMAKE_INSTALL_PREFIX=/home/vboxuser/robot/workdown/workdown_ws/install/image_topic
+[0.029s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.154s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.183s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.185s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.192s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.201s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.214s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.245s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.246s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.356s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.407s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.478s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.478s] -- Configured cppcheck include dirs: 
+[0.479s] -- Configured cppcheck exclude dirs and/or files: 
+[0.479s] -- Added test 'lint_cmake' to check CMake code style
+[0.480s] -- Added test 'uncrustify' to check C / C++ code style
+[0.480s] -- Configured uncrustify additional arguments: 
+[0.481s] -- Added test 'xmllint' to check XML markup files
+[0.481s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.511s] -- Configuring done
+[0.515s] [31mCMake Error at CMakeLists.txt:29 (add_executable):
+[0.515s]   Cannot find source file:
+[0.516s] 
+[0.516s]     publisher.cpp
+[0.516s] 
+[0.516s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[0.516s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[0.516s] 
+[0.516s] [0m
+[0.516s] [31mCMake Error at CMakeLists.txt:30 (add_executable):
+[0.517s]   Cannot find source file:
+[0.517s] 
+[0.517s]     subscribe.cpp
+[0.517s] 
+[0.517s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[0.517s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[0.517s] 
+[0.517s] [0m
+[0.517s] [31mCMake Error at CMakeLists.txt:29 (add_executable):
+[0.517s]   No SOURCES given to target: Image_Topic_Publisher
+[0.517s] 
+[0.517s] [0m
+[0.517s] [31mCMake Error at CMakeLists.txt:30 (add_executable):
+[0.517s]   No SOURCES given to target: Image_Topic_Subscribe
+[0.517s] 
+[0.517s] [0m
+[0.517s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[0.527s] Invoked command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vboxuser/robot/workdown/workdown_ws/image_topic -DCMAKE_INSTALL_PREFIX=/home/vboxuser/robot/workdown/workdown_ws/install/image_topic
