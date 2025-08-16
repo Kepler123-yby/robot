@@ -223,6 +223,19 @@ Image_Topic_Subscribe/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_Topic_Subscribe.dir/build.make CMakeFiles/Image_Topic_Subscribe.dir/build
 .PHONY : Image_Topic_Subscribe/fast
 
+#=============================================================================
+# Target rules for targets named Image_To_Int
+
+# Build rule for target.
+Image_To_Int: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Image_To_Int
+.PHONY : Image_To_Int
+
+# fast build rule for target.
+Image_To_Int/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_To_Int.dir/build.make CMakeFiles/Image_To_Int.dir/build
+.PHONY : Image_To_Int/fast
+
 src/publisher.o: src/publisher.cpp.o
 .PHONY : src/publisher.o
 
@@ -246,6 +259,30 @@ src/publisher.s: src/publisher.cpp.s
 src/publisher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_Topic_Publisher.dir/build.make CMakeFiles/Image_Topic_Publisher.dir/src/publisher.cpp.s
 .PHONY : src/publisher.cpp.s
+
+src/shift.o: src/shift.cpp.o
+.PHONY : src/shift.o
+
+# target to build an object file
+src/shift.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_To_Int.dir/build.make CMakeFiles/Image_To_Int.dir/src/shift.cpp.o
+.PHONY : src/shift.cpp.o
+
+src/shift.i: src/shift.cpp.i
+.PHONY : src/shift.i
+
+# target to preprocess a source file
+src/shift.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_To_Int.dir/build.make CMakeFiles/Image_To_Int.dir/src/shift.cpp.i
+.PHONY : src/shift.cpp.i
+
+src/shift.s: src/shift.cpp.s
+.PHONY : src/shift.s
+
+# target to generate assembly for a file
+src/shift.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Image_To_Int.dir/build.make CMakeFiles/Image_To_Int.dir/src/shift.cpp.s
+.PHONY : src/shift.cpp.s
 
 src/subscribe.o: src/subscribe.cpp.o
 .PHONY : src/subscribe.o
@@ -286,11 +323,15 @@ help:
 	@echo "... test"
 	@echo "... image_topic_uninstall"
 	@echo "... uninstall"
+	@echo "... Image_To_Int"
 	@echo "... Image_Topic_Publisher"
 	@echo "... Image_Topic_Subscribe"
 	@echo "... src/publisher.o"
 	@echo "... src/publisher.i"
 	@echo "... src/publisher.s"
+	@echo "... src/shift.o"
+	@echo "... src/shift.i"
+	@echo "... src/shift.s"
 	@echo "... src/subscribe.o"
 	@echo "... src/subscribe.i"
 	@echo "... src/subscribe.s"

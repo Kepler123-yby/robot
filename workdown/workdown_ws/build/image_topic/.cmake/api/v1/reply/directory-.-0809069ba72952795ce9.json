@@ -216,13 +216,19 @@
 			{
 				"command" : 0,
 				"file" : 4,
-				"line" : 43,
+				"line" : 47,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 4,
-				"line" : 48,
+				"line" : 52,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 57,
 				"parent" : 0
 			}
 		]
@@ -379,7 +385,7 @@
 				"Image_Topic_Publisher"
 			],
 			"targetId" : "Image_Topic_Publisher::@6890427a1f51a3e7e1df",
-			"targetIndex" : 0,
+			"targetIndex" : 1,
 			"type" : "target"
 		},
 		{
@@ -391,7 +397,19 @@
 				"Image_Topic_Subscribe"
 			],
 			"targetId" : "Image_Topic_Subscribe::@6890427a1f51a3e7e1df",
-			"targetIndex" : 1,
+			"targetIndex" : 2,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 34,
+			"component" : "Unspecified",
+			"destination" : "lib/image_topic",
+			"paths" : 
+			[
+				"Image_To_Int"
+			],
+			"targetId" : "Image_To_Int::@6890427a1f51a3e7e1df",
+			"targetIndex" : 0,
 			"type" : "target"
 		}
 	],
