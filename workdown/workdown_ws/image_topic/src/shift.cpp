@@ -18,17 +18,11 @@ private:
     rclcpp::Publisher<aim_interfaces::msg::AimInfo>::SharedPtr shift_publisher;
     rclcpp::TimerBase::SharedPtr shift_timer;
     void sensor_callback(const sensor_msgs::msg::Image::SharedPtr ros_img){
-        Mat cv_img = cv_bridge::toCvCopy(ros_img, "bgr8")->image;
-        namedWindow("window1",WINDOW_AUTOSIZE);
-        imshow("Window1",cv_img);
-        int key = waitKey(0);
-        if (key == 's'){
-            destroyAllWindows();
-        }
+        Mat cv_img_in = cv_bridge::toCvCopy(ros_img, "bgr8")->image;
     }
 
     void aim_timer_callback(){
-        
+
     }
 
 };
