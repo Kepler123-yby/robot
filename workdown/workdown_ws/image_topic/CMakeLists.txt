@@ -40,7 +40,7 @@ target_compile_features(Image_To_Int  PUBLIC c_std_99 cxx_std_17)
 
 ament_target_dependencies(Image_Topic_Publisher rclcpp sensor_msgs cv_bridge OpenCV)
 ament_target_dependencies(Image_Topic_Subscribe "rclcpp" "aim_interfaces" cv_bridge OpenCV)
-ament_target_dependencies(Image_To_Int rclcpp aim_interfaces sensor_msgs cv_bridge OpenCV)
+ament_target_dependencies(Image_To_Int "rclcpp" "aim_interfaces" sensor_msgs cv_bridge OpenCV)
 
 
 
