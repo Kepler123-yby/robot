@@ -3,13 +3,33 @@
 #include <cv_bridge/cv_bridge.h>
 #include "sensor_msgs/msg/image.hpp"
 #include "aim_interfaces/msg/aim_info.hpp"
+using namespace cv;
 
 class Shift : public rclcpp::Node{
 public:
     Shift(std::string name):Node(name){
         RCLCPP_INFO(this->get_logger(),"%s节点已经启动。",name.c_str());
+        shift_subscribe = this->create_subscription<sensor_msgs::msg::Image>("sensor",10,std::bind(&Shift::sensor_callback,this,std::placeholders::_1));
+        shift_publisher = this->create_publisher<aim_interfaces::msg::AimInfo>("array",10);
+        shift_timer = this->create_wall_timer(std::chrono::milliseconds(500),std::bind(&Shift::aim_timer_callback,this));
     }
 private:
+    rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr shift_subscribe;
+    rclcpp::Publisher<aim_interfaces::msg::AimInfo>::SharedPtr shift_publisher;
+    rclcpp::TimerBase::SharedPtr shift_timer;
+    void sensor_callback(const sensor_msgs::msg::Image::SharedPtr ros_img){
+        Mat cv_img = cv_bridge::toCvCopy(ros_img, "bgr8")->image;
+        namedWindow("window1",WINDOW_AUTOSIZE);
+        imshow("Window1",cv_img);
+        int key = waitKey(0);
+        if (key == 's'){
+            destroyAllWindows();
+        }
+    }
+
+    void aim_timer_callback(){
+        
+    }
 
 };
 
