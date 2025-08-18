@@ -1,0 +1,326 @@
+[0.000000] (-) TimerEvent: {}
+[0.001120] (aim_interfaces) JobQueued: {'identifier': 'aim_interfaces', 'dependencies': OrderedDict()}
+[0.001254] (image_topic) JobQueued: {'identifier': 'image_topic', 'dependencies': OrderedDict([('aim_interfaces', '/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces')])}
+[0.001891] (aim_interfaces) JobStarted: {'identifier': 'aim_interfaces'}
+[0.012224] (aim_interfaces) JobProgress: {'identifier': 'aim_interfaces', 'progress': 'cmake'}
+[0.014448] (aim_interfaces) JobProgress: {'identifier': 'aim_interfaces', 'progress': 'build'}
+[0.016981] (aim_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vboxuser/robot/workdown/workdown_ws/build/aim_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/vboxuser/robot/workdown/workdown_ws/build/aim_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'vboxuser'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vboxuser'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.101.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2540'), ('SYSTEMD_EXEC_PID', '2693'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3660'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vboxuser'), ('JOURNAL_STREAM', '8:11874'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig::/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubantu22:@/tmp/.ICE-unix/2663,unix/ubantu22:/tmp/.ICE-unix/2663'), ('INVOCATION_ID', '0dad74466f294fee844a41aa204e5837'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.V3SRB3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-75bd82cd6d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/robot/workdown/workdown_ws/build/aim_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100029] (-) TimerEvent: {}
+[0.102592] (aim_interfaces) StdoutLine: {'line': b'[  3%] Built target aim_interfaces__cpp\n'}
+[0.106341] (aim_interfaces) StdoutLine: {'line': b'[ 12%] Built target aim_interfaces__rosidl_generator_c\n'}
+[0.124081] (aim_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_aim_interfaces\n'}
+[0.147684] (aim_interfaces) StdoutLine: {'line': b'[ 22%] Built target aim_interfaces__rosidl_typesupport_cpp\n'}
+[0.162705] (aim_interfaces) StdoutLine: {'line': b'[ 32%] Built target aim_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.162894] (aim_interfaces) StdoutLine: {'line': b'[ 41%] Built target aim_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.178946] (aim_interfaces) StdoutLine: {'line': b'[ 51%] Built target aim_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.191783] (aim_interfaces) StdoutLine: {'line': b'[ 61%] Built target aim_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.201637] (aim_interfaces) StdoutLine: {'line': b'[ 70%] Built target aim_interfaces__rosidl_typesupport_c\n'}
+[0.201788] (-) TimerEvent: {}
+[0.229755] (aim_interfaces) StdoutLine: {'line': b'[ 70%] Built target aim_interfaces\n'}
+[0.259242] (aim_interfaces) StdoutLine: {'line': b'[ 74%] Built target aim_interfaces__py\n'}
+[0.300910] (aim_interfaces) StdoutLine: {'line': b'[ 80%] Built target aim_interfaces__rosidl_generator_py\n'}
+[0.332083] (aim_interfaces) StdoutLine: {'line': b'[ 87%] Built target aim_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.332248] (-) TimerEvent: {}
+[0.336560] (aim_interfaces) StdoutLine: {'line': b'[ 93%] Built target aim_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.339074] (aim_interfaces) StdoutLine: {'line': b'[100%] Built target aim_interfaces__rosidl_typesupport_c__pyext\n'}
+[0.393118] (aim_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.395344] (aim_interfaces) StdoutLine: {'line': b'writing aim_interfaces.egg-info/PKG-INFO\n'}
+[0.395779] (aim_interfaces) StdoutLine: {'line': b'writing dependency_links to aim_interfaces.egg-info/dependency_links.txt\n'}
+[0.396968] (aim_interfaces) StdoutLine: {'line': b'writing top-level names to aim_interfaces.egg-info/top_level.txt\n'}
+[0.400713] (aim_interfaces) StdoutLine: {'line': b"reading manifest file 'aim_interfaces.egg-info/SOURCES.txt'\n"}
+[0.402103] (aim_interfaces) StdoutLine: {'line': b"writing manifest file 'aim_interfaces.egg-info/SOURCES.txt'\n"}
+[0.432424] (-) TimerEvent: {}
+[0.443097] (aim_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_aim_interfaces_egg\n'}
+[0.461115] (aim_interfaces) CommandEnded: {'returncode': 0}
+[0.476631] (aim_interfaces) JobProgress: {'identifier': 'aim_interfaces', 'progress': 'install'}
+[0.488727] (aim_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vboxuser/robot/workdown/workdown_ws/build/aim_interfaces'], 'cwd': '/home/vboxuser/robot/workdown/workdown_ws/build/aim_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'vboxuser'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vboxuser'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.101.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2540'), ('SYSTEMD_EXEC_PID', '2693'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3660'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vboxuser'), ('JOURNAL_STREAM', '8:11874'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig::/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubantu22:@/tmp/.ICE-unix/2663,unix/ubantu22:/tmp/.ICE-unix/2663'), ('INVOCATION_ID', '0dad74466f294fee844a41aa204e5837'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.V3SRB3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-75bd82cd6d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/robot/workdown/workdown_ws/build/aim_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.497199] (aim_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.497388] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/ament_index/resource_index/rosidl_interfaces/aim_interfaces\n'}
+[0.497464] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces\n'}
+[0.497519] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg\n'}
+[0.497572] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.497622] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail\n'}
+[0.497671] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail/aim_info__struct.h\n'}
+[0.497717] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail/aim_info__type_support.h\n'}
+[0.497763] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail/aim_info__functions.c\n'}
+[0.497807] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail/aim_info__functions.h\n'}
+[0.497856] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/aim_info.h\n'}
+[0.498051] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/environment/library_path.sh\n'}
+[0.498123] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/environment/library_path.dsv\n'}
+[0.498227] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib/libaim_interfaces__rosidl_generator_c.so\n'}
+[0.498334] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces\n'}
+[0.498398] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg\n'}
+[0.498842] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.498936] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail\n'}
+[0.498991] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail/aim_info__rosidl_typesupport_fastrtps_c.h\n'}
+[0.499835] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib/libaim_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[0.500230] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces\n'}
+[0.500309] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg\n'}
+[0.500419] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.500477] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail\n'}
+[0.500526] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail/aim_info__type_support.c\n'}
+[0.500608] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail/aim_info__rosidl_typesupport_introspection_c.h\n'}
+[0.501765] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib/libaim_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[0.510764] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib/libaim_interfaces__rosidl_typesupport_c.so\n'}
+[0.511081] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces\n'}
+[0.511299] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg\n'}
+[0.511383] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.511444] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail\n'}
+[0.511675] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail/aim_info__traits.hpp\n'}
+[0.511874] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail/aim_info__type_support.hpp\n'}
+[0.511955] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail/aim_info__builder.hpp\n'}
+[0.512008] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail/aim_info__struct.hpp\n'}
+[0.512160] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/aim_info.hpp\n'}
+[0.512233] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces\n'}
+[0.512283] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg\n'}
+[0.512330] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail\n'}
+[0.512375] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail/dds_fastrtps\n'}
+[0.513092] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail/aim_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.513168] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.513221] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib/libaim_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.513268] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces\n'}
+[0.513313] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg\n'}
+[0.513726] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail\n'}
+[0.513791] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail/aim_info__type_support.cpp\n'}
+[0.513842] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/include/aim_interfaces/aim_interfaces/msg/detail/aim_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.513892] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib/libaim_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[0.513990] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib/libaim_interfaces__rosidl_typesupport_cpp.so\n'}
+[0.514059] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/environment/pythonpath.sh\n'}
+[0.514109] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/environment/pythonpath.dsv\n'}
+[0.514154] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces-0.0.0-py3.10.egg-info\n'}
+[0.514199] (aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.514247] (aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.514293] (aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.514344] (aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.514394] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces\n'}
+[0.514439] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces/aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.514484] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces/_aim_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.514529] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces/aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.514574] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces/msg\n'}
+[0.514618] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces/msg/_aim_info.py\n'}
+[0.514687] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces/msg/__init__.py\n'}
+[0.514738] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces/msg/_aim_info_s.c\n'}
+[0.514785] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces/__init__.py\n'}
+[0.514837] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces/_aim_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[0.514885] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces/_aim_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.514930] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces/aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.514974] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces/libaim_interfaces__rosidl_generator_py.so\n'}
+[0.534202] (-) TimerEvent: {}
+[0.572992] (aim_interfaces) StdoutLine: {'line': b"Listing '/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces'...\n"}
+[0.573444] (aim_interfaces) StdoutLine: {'line': b"Listing '/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces/msg'...\n"}
+[0.574680] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces/aim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.576010] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces/aim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.577009] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages/aim_interfaces/aim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.578975] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib/libaim_interfaces__rosidl_generator_py.so\n'}
+[0.579221] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/msg/AimInfo.idl\n'}
+[0.579305] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/msg/AimInfo.msg\n'}
+[0.579361] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/ament_index/resource_index/package_run_dependencies/aim_interfaces\n'}
+[0.579412] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/ament_index/resource_index/parent_prefix_path/aim_interfaces\n'}
+[0.580286] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/environment/ament_prefix_path.sh\n'}
+[0.580345] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/environment/ament_prefix_path.dsv\n'}
+[0.580398] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/environment/path.sh\n'}
+[0.580992] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/environment/path.dsv\n'}
+[0.581070] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/local_setup.bash\n'}
+[0.581124] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/local_setup.sh\n'}
+[0.581171] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/local_setup.zsh\n'}
+[0.582082] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/local_setup.dsv\n'}
+[0.582140] (aim_interfaces) StdoutLine: {'line': b'-- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/package.dsv\n'}
+[0.582193] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/ament_index/resource_index/packages/aim_interfaces\n'}
+[0.586705] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/export_aim_interfaces__rosidl_generator_cExport.cmake\n'}
+[0.587265] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/export_aim_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.587356] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/export_aim_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.587414] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/export_aim_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.588319] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/aim_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.588428] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/aim_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.590146] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/aim_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[0.590247] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/aim_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.591509] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/export_aim_interfaces__rosidl_generator_cppExport.cmake\n'}
+[0.593941] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/export_aim_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.594062] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/export_aim_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.594157] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/aim_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.594231] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/aim_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.594742] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/aim_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[0.594836] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/aim_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.595656] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/export_aim_interfaces__rosidl_generator_pyExport.cmake\n'}
+[0.595758] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/export_aim_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.595814] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[0.595923] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.596158] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.596389] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.596460] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.596511] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.596558] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.596612] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/aim_interfacesConfig.cmake\n'}
+[0.596656] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake/aim_interfacesConfig-version.cmake\n'}
+[0.596731] (aim_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/package.xml\n'}
+[0.604201] (aim_interfaces) CommandEnded: {'returncode': 0}
+[0.630447] (aim_interfaces) JobEnded: {'identifier': 'aim_interfaces', 'rc': 0}
+[0.631294] (image_topic) JobStarted: {'identifier': 'image_topic'}
+[0.637329] (-) TimerEvent: {}
+[0.653183] (image_topic) JobProgress: {'identifier': 'image_topic', 'progress': 'cmake'}
+[0.664307] (image_topic) JobProgress: {'identifier': 'image_topic', 'progress': 'build'}
+[0.664728] (image_topic) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic', '--', '-j4', '-l4'], 'cwd': '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'vboxuser'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vboxuser'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.101.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2540'), ('SYSTEMD_EXEC_PID', '2693'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3660'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vboxuser'), ('JOURNAL_STREAM', '8:11874'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig::/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubantu22:@/tmp/.ICE-unix/2663,unix/ubantu22:/tmp/.ICE-unix/2663'), ('INVOCATION_ID', '0dad74466f294fee844a41aa204e5837'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.V3SRB3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-75bd82cd6d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.702982] (image_topic) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.917620] (image_topic) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.917816] (-) TimerEvent: {}
+[0.918375] (image_topic) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.918494] (image_topic) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.918551] (image_topic) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.918601] (image_topic) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.918648] (image_topic) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.918694] (image_topic) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.918741] (image_topic) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.983840] (image_topic) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.022994] (image_topic) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.023176] (-) TimerEvent: {}
+[1.127138] (image_topic) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.127437] (-) TimerEvent: {}
+[1.127595] (image_topic) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.127688] (image_topic) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.128566] (image_topic) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.131299] (image_topic) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.132572] (image_topic) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.141337] (image_topic) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.141442] (image_topic) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.142672] (image_topic) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.145846] (image_topic) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.170140] (image_topic) StdoutLine: {'line': b'-- Found aim_interfaces: 0.0.0 (/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake)\n'}
+[1.194406] (image_topic) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[1.200312] (image_topic) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.236310] (image_topic) StdoutLine: {'line': b'-- Generating done\n'}
+[1.236557] (-) TimerEvent: {}
+[1.249023] (image_topic) StdoutLine: {'line': b'-- Build files have been written to: /home/vboxuser/robot/workdown/workdown_ws/build/image_topic\n'}
+[1.427187] (-) TimerEvent: {}
+[1.456110] (image_topic) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target Image_Topic_Publisher\x1b[0m\n'}
+[1.460673] (image_topic) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target Image_Topic_Subscribe\x1b[0m\n'}
+[1.470223] (image_topic) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target Image_To_Int\x1b[0m\n'}
+[1.504042] (image_topic) StdoutLine: {'line': b'[ 33%] Built target Image_Topic_Subscribe\n'}
+[1.510218] (image_topic) StdoutLine: {'line': b'[ 66%] Built target Image_Topic_Publisher\n'}
+[1.510780] (image_topic) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/Image_To_Int.dir/src/shift.cpp.o\x1b[0m\n'}
+[1.781106] (-) TimerEvent: {}
+[1.901297] (-) TimerEvent: {}
+[2.002704] (-) TimerEvent: {}
+[2.108020] (-) TimerEvent: {}
+[2.219161] (-) TimerEvent: {}
+[2.319971] (-) TimerEvent: {}
+[2.430282] (-) TimerEvent: {}
+[2.531271] (-) TimerEvent: {}
+[2.631836] (-) TimerEvent: {}
+[2.945870] (-) TimerEvent: {}
+[3.063028] (-) TimerEvent: {}
+[3.170988] (-) TimerEvent: {}
+[3.281071] (-) TimerEvent: {}
+[3.382922] (-) TimerEvent: {}
+[3.483964] (-) TimerEvent: {}
+[3.616055] (-) TimerEvent: {}
+[3.760432] (-) TimerEvent: {}
+[3.900444] (-) TimerEvent: {}
+[4.011052] (-) TimerEvent: {}
+[4.138342] (-) TimerEvent: {}
+[4.252000] (-) TimerEvent: {}
+[4.352757] (-) TimerEvent: {}
+[4.454326] (-) TimerEvent: {}
+[4.561846] (-) TimerEvent: {}
+[4.663959] (-) TimerEvent: {}
+[4.785867] (-) TimerEvent: {}
+[4.886574] (-) TimerEvent: {}
+[4.932027] (image_topic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/shift.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Shift::sensor_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.932278] (image_topic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/shift.cpp:24:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kkey\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.932374] (image_topic) StderrLine: {'line': b'   24 |         int \x1b[01;35m\x1b[Kkey\x1b[m\x1b[K = waitKey(0);\n'}
+[4.932444] (image_topic) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.988791] (-) TimerEvent: {}
+[5.090758] (-) TimerEvent: {}
+[5.233306] (-) TimerEvent: {}
+[5.335431] (-) TimerEvent: {}
+[5.501320] (-) TimerEvent: {}
+[5.605037] (-) TimerEvent: {}
+[5.706963] (-) TimerEvent: {}
+[5.814387] (-) TimerEvent: {}
+[5.918567] (-) TimerEvent: {}
+[6.021847] (-) TimerEvent: {}
+[6.127837] (-) TimerEvent: {}
+[6.229253] (-) TimerEvent: {}
+[6.345898] (-) TimerEvent: {}
+[6.448206] (-) TimerEvent: {}
+[6.550852] (-) TimerEvent: {}
+[6.667214] (-) TimerEvent: {}
+[6.787270] (-) TimerEvent: {}
+[6.899033] (-) TimerEvent: {}
+[7.001895] (-) TimerEvent: {}
+[7.119337] (-) TimerEvent: {}
+[7.220786] (-) TimerEvent: {}
+[7.321449] (-) TimerEvent: {}
+[7.421957] (-) TimerEvent: {}
+[7.525753] (-) TimerEvent: {}
+[7.627817] (-) TimerEvent: {}
+[7.729072] (-) TimerEvent: {}
+[7.829897] (-) TimerEvent: {}
+[7.942927] (-) TimerEvent: {}
+[8.050262] (-) TimerEvent: {}
+[8.155220] (-) TimerEvent: {}
+[8.259476] (-) TimerEvent: {}
+[8.361515] (-) TimerEvent: {}
+[8.468109] (-) TimerEvent: {}
+[8.568962] (-) TimerEvent: {}
+[8.676916] (-) TimerEvent: {}
+[8.783080] (-) TimerEvent: {}
+[8.883947] (-) TimerEvent: {}
+[8.985034] (-) TimerEvent: {}
+[9.085778] (-) TimerEvent: {}
+[9.198995] (-) TimerEvent: {}
+[9.301143] (-) TimerEvent: {}
+[9.419101] (-) TimerEvent: {}
+[9.521385] (-) TimerEvent: {}
+[9.622742] (-) TimerEvent: {}
+[9.724338] (-) TimerEvent: {}
+[9.826503] (-) TimerEvent: {}
+[9.928035] (-) TimerEvent: {}
+[10.033886] (-) TimerEvent: {}
+[10.138261] (-) TimerEvent: {}
+[10.238757] (-) TimerEvent: {}
+[10.341066] (-) TimerEvent: {}
+[10.441992] (-) TimerEvent: {}
+[10.542863] (-) TimerEvent: {}
+[10.644038] (-) TimerEvent: {}
+[11.034122] (-) TimerEvent: {}
+[11.126338] (image_topic) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable Image_To_Int\x1b[0m\n'}
+[11.138238] (-) TimerEvent: {}
+[11.239336] (-) TimerEvent: {}
+[11.340304] (-) TimerEvent: {}
+[11.442332] (-) TimerEvent: {}
+[11.544382] (-) TimerEvent: {}
+[11.547955] (image_topic) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.411\n'}
+[11.644893] (-) TimerEvent: {}
+[11.745738] (-) TimerEvent: {}
+[11.849759] (-) TimerEvent: {}
+[11.952255] (-) TimerEvent: {}
+[12.055188] (-) TimerEvent: {}
+[12.158532] (-) TimerEvent: {}
+[12.219345] (image_topic) StdoutLine: {'line': b'[100%] Built target Image_To_Int\n'}
+[12.235699] (image_topic) CommandEnded: {'returncode': 0}
+[12.239344] (image_topic) JobProgress: {'identifier': 'image_topic', 'progress': 'install'}
+[12.240280] (image_topic) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic'], 'cwd': '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'vboxuser'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vboxuser'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.101.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2540'), ('SYSTEMD_EXEC_PID', '2693'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3660'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vboxuser'), ('JOURNAL_STREAM', '8:11874'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig::/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubantu22:@/tmp/.ICE-unix/2663,unix/ubantu22:/tmp/.ICE-unix/2663'), ('INVOCATION_ID', '0dad74466f294fee844a41aa204e5837'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.V3SRB3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-75bd82cd6d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble')]), 'shell': False}
+[12.249260] (image_topic) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.250218] (image_topic) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/package_run_dependencies/image_topic\n'}
+[12.250332] (image_topic) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/parent_prefix_path/image_topic\n'}
+[12.250406] (image_topic) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/ament_prefix_path.sh\n'}
+[12.250464] (image_topic) StdoutLine: {'line': b'-- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/ament_prefix_path.dsv\n'}
+[12.250574] (image_topic) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/path.sh\n'}
+[12.250751] (image_topic) StdoutLine: {'line': b'-- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/path.dsv\n'}
+[12.251018] (image_topic) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.bash\n'}
+[12.251095] (image_topic) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.sh\n'}
+[12.251156] (image_topic) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.zsh\n'}
+[12.251205] (image_topic) StdoutLine: {'line': b'-- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.dsv\n'}
+[12.251253] (image_topic) StdoutLine: {'line': b'-- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/package.dsv\n'}
+[12.251450] (image_topic) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/packages/image_topic\n'}
+[12.251524] (image_topic) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/cmake/image_topicConfig.cmake\n'}
+[12.251578] (image_topic) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/cmake/image_topicConfig-version.cmake\n'}
+[12.251637] (image_topic) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/package.xml\n'}
+[12.253713] (image_topic) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_Topic_Publisher\n'}
+[12.255773] (image_topic) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_Topic_Subscribe\n'}
+[12.258056] (image_topic) StdoutLine: {'line': b'-- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_To_Int\n'}
+[12.258840] (-) TimerEvent: {}
+[12.263983] (image_topic) StdoutLine: {'line': b'-- Set runtime path of "/home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_To_Int" to ""\n'}
+[12.267325] (image_topic) CommandEnded: {'returncode': 0}
+[12.290977] (image_topic) JobEnded: {'identifier': 'image_topic', 'rc': 0}
+[12.293112] (-) EventReactorShutdown: {}

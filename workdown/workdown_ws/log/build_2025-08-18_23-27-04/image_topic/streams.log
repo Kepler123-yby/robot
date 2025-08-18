@@ -1,0 +1,63 @@
+[0.034s] Invoking command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic': AMENT_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/vboxuser/robot/workdown/workdown_ws/build/image_topic -- -j4 -l4
+[0.072s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.286s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.287s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.287s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.287s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.287s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.287s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.287s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.287s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.353s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.392s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.496s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.496s] -- Configured cppcheck include dirs: 
+[0.496s] -- Configured cppcheck exclude dirs and/or files: 
+[0.497s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.500s] -- Added test 'lint_cmake' to check CMake code style
+[0.501s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.510s] -- Added test 'uncrustify' to check C / C++ code style
+[0.510s] -- Configured uncrustify additional arguments: 
+[0.511s] -- Added test 'xmllint' to check XML markup files
+[0.515s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.539s] -- Found aim_interfaces: 0.0.0 (/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/share/aim_interfaces/cmake)
+[0.563s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.569s] -- Configuring done
+[0.605s] -- Generating done
+[0.620s] -- Build files have been written to: /home/vboxuser/robot/workdown/workdown_ws/build/image_topic
+[0.829s] [35m[1mConsolidate compiler generated dependencies of target Image_Topic_Publisher[0m
+[0.829s] [35m[1mConsolidate compiler generated dependencies of target Image_Topic_Subscribe[0m
+[0.839s] [35m[1mConsolidate compiler generated dependencies of target Image_To_Int[0m
+[0.873s] [ 33%] Built target Image_Topic_Subscribe
+[0.879s] [ 66%] Built target Image_Topic_Publisher
+[0.880s] [ 83%] [32mBuilding CXX object CMakeFiles/Image_To_Int.dir/src/shift.cpp.o[0m
+[4.301s] [01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/shift.cpp:[m[K In member function ‘[01m[Kvoid Shift::sensor_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.301s] [01m[K/home/vboxuser/robot/workdown/workdown_ws/image_topic/src/shift.cpp:24:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkey[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.301s]    24 |         int [01;35m[Kkey[m[K = waitKey(0);
+[4.301s]       |             [01;35m[K^~~[m[K
+[10.495s] [100%] [32m[1mLinking CXX executable Image_To_Int[0m
+[10.917s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.411
+[11.588s] [100%] Built target Image_To_Int
+[11.605s] Invoked command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic' returned '0': AMENT_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/vboxuser/robot/workdown/workdown_ws/build/image_topic -- -j4 -l4
+[11.610s] Invoking command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic': AMENT_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/vboxuser/robot/workdown/workdown_ws/build/image_topic
+[11.619s] -- Install configuration: ""
+[11.619s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/package_run_dependencies/image_topic
+[11.619s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/parent_prefix_path/image_topic
+[11.619s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/ament_prefix_path.sh
+[11.619s] -- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/ament_prefix_path.dsv
+[11.619s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/path.sh
+[11.620s] -- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/path.dsv
+[11.620s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.bash
+[11.620s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.sh
+[11.620s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.zsh
+[11.620s] -- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.dsv
+[11.620s] -- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/package.dsv
+[11.620s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/packages/image_topic
+[11.620s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/cmake/image_topicConfig.cmake
+[11.620s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/cmake/image_topicConfig-version.cmake
+[11.620s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/package.xml
+[11.622s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_Topic_Publisher
+[11.625s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_Topic_Subscribe
+[11.627s] -- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_To_Int
+[11.633s] -- Set runtime path of "/home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_To_Int" to ""
+[11.636s] Invoked command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic' returned '0': AMENT_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/vboxuser/robot/workdown/workdown_ws/build/image_topic

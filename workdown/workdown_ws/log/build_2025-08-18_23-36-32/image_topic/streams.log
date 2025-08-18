@@ -1,0 +1,32 @@
+[0.012s] Invoking command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic': AMENT_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/vboxuser/robot/workdown/workdown_ws/build/image_topic -- -j4 -l4
+[0.082s] [35m[1mConsolidate compiler generated dependencies of target Image_To_Int[0m
+[0.095s] [ 50%] Built target Image_Topic_Subscribe
+[0.096s] [ 50%] [32mBuilding CXX object CMakeFiles/Image_Topic_Publisher.dir/src/publisher.cpp.o[0m
+[0.111s] [ 83%] Built target Image_To_Int
+[5.801s] [100%] [32m[1mLinking CXX executable Image_Topic_Publisher[0m
+[5.944s] /usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.411
+[5.945s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.411
+[6.267s] [100%] Built target Image_Topic_Publisher
+[6.282s] Invoked command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic' returned '0': AMENT_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/vboxuser/robot/workdown/workdown_ws/build/image_topic -- -j4 -l4
+[6.285s] Invoking command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic': AMENT_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/vboxuser/robot/workdown/workdown_ws/build/image_topic
+[6.293s] -- Install configuration: ""
+[6.297s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/package_run_dependencies/image_topic
+[6.297s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/parent_prefix_path/image_topic
+[6.297s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/ament_prefix_path.sh
+[6.298s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/ament_prefix_path.dsv
+[6.298s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/path.sh
+[6.298s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/environment/path.dsv
+[6.298s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.bash
+[6.298s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.sh
+[6.298s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.zsh
+[6.298s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/local_setup.dsv
+[6.298s] -- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/package.dsv
+[6.298s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/ament_index/resource_index/packages/image_topic
+[6.298s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/cmake/image_topicConfig.cmake
+[6.298s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/cmake/image_topicConfig-version.cmake
+[6.298s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/share/image_topic/package.xml
+[6.298s] -- Installing: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_Topic_Publisher
+[6.298s] -- Set runtime path of "/home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_Topic_Publisher" to ""
+[6.299s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_Topic_Subscribe
+[6.299s] -- Up-to-date: /home/vboxuser/robot/workdown/workdown_ws/install/image_topic/lib/image_topic/Image_To_Int
+[6.302s] Invoked command in '/home/vboxuser/robot/workdown/workdown_ws/build/image_topic' returned '0': AMENT_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vboxuser/robot/workdown/workdown_ws/install/aim_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/vboxuser/robot/workdown/workdown_ws/build/image_topic
