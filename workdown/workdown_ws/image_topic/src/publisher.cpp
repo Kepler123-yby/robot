@@ -16,10 +16,10 @@ private:
     rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr sensor_img;
     rclcpp::TimerBase::SharedPtr time;
     void timer_callback(){
-        Mat image = imread("workdown/workdown_ws/picture/output.png",IMREAD_COLOR);
+        Mat image = imread("/home/vboxuser/robot/workdown/workdown_ws/picture/output.png",IMREAD_COLOR);
         if (image.empty()){
-      RCLCPP_WARN(this->get_logger(), "图片读取失败，请检查路径！");
-      return;
+            RCLCPP_WARN(this->get_logger(), "图片读取失败，请检查路径！");
+            return;
     }
         auto picture = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", image).toImageMsg();
         sensor_img->publish(*picture);
