@@ -6,7 +6,9 @@
 using namespace cv;
 
 //内参
-static const Mat K = (Mat_<double>(3,3) << 1462.3697,0,398.59394,0,1469.68358,110.68997,0,0,1);
+static const Mat K = (Mat_<double>(3,3) << 1462.3697,0,398.59394,
+0,1469.68358,110.68997,
+0,0,1);
 //畸变矩阵
 static const Mat D = (Mat_<double>(5,1) << 0.003518, -0.311778,-0.016581,0.023682,0.0000);
 
@@ -27,14 +29,18 @@ static const Mat R_CAM2ROBOT = []{
 static const Mat T_CAM2ROBOT = (Mat_<float>(3,1) << 0.08f,0.0f,0.05f);
 
 //副函数
+//去畸变函数
+static Mat remove_distort(const Mat& img_in){
+    Mat img;
+    undistort(img_in,img,K,D);
+    return img;
+};
 //提取灯条函数
 //匹配装甲板函数
 //区分装甲板函数
 
 //主函数
-static void detect_a(const Mat& img_in,const Mat& img){
-    undistort(img_in,img,K,D);
-};
+
 
 
 class Shift : public rclcpp::Node{
@@ -51,8 +57,7 @@ private:
     rclcpp::TimerBase::SharedPtr shift_timer;
     void sensor_callback(const sensor_msgs::msg::Image::SharedPtr ros_img){
         Mat cv_img_in = cv_bridge::toCvCopy(ros_img, "bgr8")->image;
-        Mat cv_img;
-        detect_a(cv_img_in,cv_img);
+        Mat cv_img = remove_distort(cv_img_in);
         namedWindow("Window1",WINDOW_AUTOSIZE);
         namedWindow("Window2",WINDOW_AUTOSIZE);
         imshow("Window1",cv_img_in);
