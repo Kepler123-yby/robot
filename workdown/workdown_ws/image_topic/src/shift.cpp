@@ -29,12 +29,6 @@ static const Mat R_CAM2ROBOT = []{
 static const Mat T_CAM2ROBOT = (Mat_<float>(3,1) << 0.08f,0.0f,0.05f);
 
 //副函数
-//去畸变函数
-static Mat remove_distort(const Mat& img_in){
-    Mat img;
-    undistort(img_in,img,K,D);
-    return img;
-};
 //提取灯条函数
 //匹配装甲板函数
 //区分装甲板函数
@@ -57,11 +51,8 @@ private:
     rclcpp::TimerBase::SharedPtr shift_timer;
     void sensor_callback(const sensor_msgs::msg::Image::SharedPtr ros_img){
         Mat cv_img_in = cv_bridge::toCvCopy(ros_img, "bgr8")->image;
-        Mat cv_img = remove_distort(cv_img_in);
         namedWindow("Window1",WINDOW_AUTOSIZE);
-        namedWindow("Window2",WINDOW_AUTOSIZE);
         imshow("Window1",cv_img_in);
-        imshow("Window2",cv_img);
         waitKey(1);
     }
 
