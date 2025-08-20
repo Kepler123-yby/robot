@@ -6,9 +6,7 @@
 using namespace cv;
 
 //内参
-static const Mat K = (Mat_<double>(3,3) << 1462.3697,0,398.59394,
-0,1469.68358,110.68997,
-0,0,1);
+static const Mat K = (Mat_<double>(3,3) << 1462.3697,0,398.59394,0,1469.68385,110.68997,0,0,1);
 //畸变矩阵
 static const Mat D = (Mat_<double>(5,1) << 0.003518, -0.311778,-0.016581,0.023682,0.0000);
 
@@ -19,21 +17,19 @@ static const float a_weight = 0.16f;
 static const std::vector<Point3f> OBJ_PTF = {{-a_weight/2,a_height/2,0},{a_weight/2,a_height/2,0},{a_weight/2,-a_height/2,0},{-a_weight/2,-a_height/2,0}};
 
 //相机坐标系到机器人坐标系的转换
-//旋转矩阵
+//相机->机器人旋转矩阵
 static const Mat R_CAM2ROBOT = []{
     Mat R;
     Rodrigues(Vec3f(0,60,20)*float(CV_PI/180.f),R);
     return R;
 }();
-//平移向量
+//相机->机器人平移向量
 static const Mat T_CAM2ROBOT = (Mat_<float>(3,1) << 0.08f,0.0f,0.05f);
 
-//副函数
-//提取灯条函数
-//匹配装甲板函数
-//区分装甲板函数
-
-//主函数
+//世界坐标系下坐标
+//图像坐标
+//pnp解算
+//转换为机器人坐标系坐标
 
 
 
@@ -51,9 +47,7 @@ private:
     rclcpp::TimerBase::SharedPtr shift_timer;
     void sensor_callback(const sensor_msgs::msg::Image::SharedPtr ros_img){
         Mat cv_img_in = cv_bridge::toCvCopy(ros_img, "bgr8")->image;
-        namedWindow("Window1",WINDOW_AUTOSIZE);
-        imshow("Window1",cv_img_in);
-        waitKey(1);
+        
     }
 
     void aim_timer_callback(){
