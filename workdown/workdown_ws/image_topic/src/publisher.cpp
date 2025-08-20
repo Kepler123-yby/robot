@@ -16,7 +16,7 @@ private:
     rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr sensor_img;
     rclcpp::TimerBase::SharedPtr time;
     void timer_callback(){
-        Mat image = imread("/home/vboxuser/robot/workdown/workdown_ws/picture/output.png",IMREAD_COLOR);
+        Mat image = imread("/home/vboxuser/robot/workdown/workdown_ws/picture/3.png",IMREAD_COLOR);
         if (image.empty()){
             RCLCPP_WARN(this->get_logger(), "图片读取失败，请检查路径！");
             return;
