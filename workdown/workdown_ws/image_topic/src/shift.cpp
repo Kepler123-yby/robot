@@ -28,86 +28,70 @@ static const Mat T_CAM2ROBOT = (Mat_<float>(3,1) << 0.08f,0.0f,0.05f);
 static const std::vector<Point3f> OBJ_PTF = {{-a_weight/2,a_height/2,0},{a_weight/2,a_height/2,0},{a_weight/2,-a_height/2,0},{-a_weight/2,-a_height/2,0}};
 //图像坐标
 //1、分割红/蓝灯条
-Mat mask_light(const Mat& bgr){
+Mat mask_light(const Mat& img_in){
+    //声明hsv图像、红/蓝滤波、输出图像
     Mat hsv_img,mask_red1,mask_red2,mask_blue,out_img;
-    cvtColor(bgr,hsv_img,COLOR_BGR2HSV);
+    //转换为hsv图像
+    cvtColor(img_in,hsv_img,COLOR_BGR2HSV);
+    //定义红蓝滤波
     inRange(hsv_img,Scalar(0,120,70),Scalar(10,255,255),mask_red1);
     inRange(hsv_img,Scalar(156,120,70),Scalar(180,255,255),mask_red2);
     inRange(hsv_img,Scalar(100,120,70),Scalar(124,255,255),mask_blue);
+    //定义输出图像
     out_img = mask_red1 | mask_red2 | mask_blue;
-    cv::morphologyEx(out_img, out_img, cv::MORPH_CLOSE,cv::getStructuringElement(cv::MORPH_RECT, {3, 3}), {-1, -1}, 2);
+    //膨胀后腐蚀
+    morphologyEx(out_img, out_img, MORPH_CLOSE,getStructuringElement(cv::MORPH_RECT, {3, 3}), {-1, -1}, 2);
     return out_img;
 };
 //2、灯条检测
-std::vector<RotatedRect> detect_light_bar(const Mat& img_in,const Mat& img_out){
+std::vector<RotatedRect> detect_lightbar(const Mat& img_in,const Mat& img_out){
+    //轮廓容器
     std::vector<std::vector<Point>> contours;
+    //查找轮廓
     findContours(img_in,contours,RETR_EXTERNAL,CHAIN_APPROX_SIMPLE);
+    //声明灯带
     std::vector<RotatedRect> bars;
+    //遍历轮廓
     for (const auto& c : contours)
     {
+        //轮廓点数少无法拟合，应跳过
         if (c.size() < 5) continue;
-        cv::RotatedRect r = cv::minAreaRect(c);
-        float h = std::max(r.size.height, r.size.width);
-        float w = std::min(r.size.height, r.size.width);
-        if (h / w < 2.0f || h / w > 8.0f) continue;
-        if (h < img_out.rows * 0.02f) continue;
+        //矩形拟合
+        RotatedRect r = minAreaRect(c);
         bars.push_back(r);
     }
     return bars;
 };
 //3、灯条配对（返回四边形角点）
-std::vector<Point2f> pairLightBars(const std::vector<cv::RotatedRect>& bars,const cv::Size& img_size){
-    const float diag = norm(Vec2f(img_size.width, img_size.height));
-    for (size_t i = 0; i < bars.size(); ++i)
-    {
-        for (size_t j = i + 1; j < bars.size(); ++j)
-        {
+std::vector<Point2f> match_lightbars(const std::vector<RotatedRect>& bars){
+    //暴力进行灯条逐一配对
+    for(size_t i = 0; i < bars.size();++i){
+        for(size_t j = i+1; j < bars.size();++j){
             const auto& r1 = bars[i];
             const auto& r2 = bars[j];
             float len1 = std::max(r1.size.height, r1.size.width);
             float len2 = std::max(r2.size.height, r2.size.width);
-            if (std::fabs(len1 - len2) / std::max(len1, len2) > 0.4f) continue;
-
-            float d = cv::norm(r1.center - r2.center);
-            if (d < len1 || d > len1 * 4 || d > diag * 0.6f) continue;
-
-            // 生成四边形角点
-            auto vec = [](const cv::RotatedRect& r) -> cv::Point2f {
-                cv::Point2f pts[4];
-                r.points(pts);
-                cv::Point2f v =
-                    (r.size.height > r.size.width) ? (pts[2] - pts[1]) : (pts[1] - pts[0]);
-                return v * 0.5f;
+            if (std::fabs(len1 - len2) / std::max(len1, len2) > 0.4f){
+                continue;
+            }
+            float d = norm(r1.center-r2.center);
+            if(d > len1+len2){
+                continue;
+            }
+            //角度筛选
+            if(fabs(r1.angle - r2.angle)>20.0f){
+                continue;
+            }
+            //生成四边形角点
+            auto vec = [](const RotatedRect& r) -> Point2f{
+                
             };
-            std::vector<cv::Point2f> corners = {
-                r1.center - vec(r1),  // 灯条1 上
-                r1.center + vec(r1),  // 灯条1 下
-                r2.center + vec(r2),  // 灯条2 下
-                r2.center - vec(r2)   // 灯条2 上
-            };
-            return corners;
         }
     }
-    return {};
+
 };
 //4、pnp解算
-bool solveArmorPose(const std::vector<cv::Point2f>& img_corners,
-                    cv::Mat& rvec, cv::Mat& tvec)
-{
-    if (img_corners.size() != 4) return false;
-    cv::solvePnP(OBJ_PTF, img_corners, K, D, rvec, tvec);
-    return true;
-};
 // 5. 相机坐标 → 机器人坐标
-cv::Point3f cam2Robot(const cv::Mat& rvec, const cv::Mat& tvec)
-{
-    cv::Mat R_obj2cam;
-    cv::Rodrigues(rvec, R_obj2cam);
-    cv::Mat t_obj2robot = R_CAM2ROBOT * tvec + T_CAM2ROBOT;
-    return cv::Point3f(t_obj2robot.at<float>(0),
-                       t_obj2robot.at<float>(1),
-                       t_obj2robot.at<float>(2));
-};
 //转换为机器人坐标系坐标
 
 
@@ -127,13 +111,7 @@ private:
     void sensor_callback(const sensor_msgs::msg::Image::SharedPtr ros_img){
         Mat cv_img_in = cv_bridge::toCvCopy(ros_img, "bgr8")->image;
         Mat cv_img  = mask_light(cv_img_in);
-        auto bars = detect_light_bar(cv_img,cv_img_in);
-        auto corners = pairLightBars(bars, cv_img_in.size());
-        Mat rvec, tvec;
-        Point3f pt3d{NAN, NAN, NAN};
-        if (!corners.empty() && solveArmorPose(corners, rvec, tvec))
-            pt3d = cam2Robot(rvec, tvec);
-            RCLCPP_INFO(this->get_logger(),"%f,%f,%f",pt3d.x,pt3d.y,pt3d.z);
+        auto bars = detect_lightbar(cv_img,cv_img_in);
     }
 
     void aim_timer_callback(){
