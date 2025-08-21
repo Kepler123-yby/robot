@@ -44,7 +44,7 @@ Mat mask_light(const Mat& img_in){
     return out_img;
 };
 //2、灯条检测
-std::vector<RotatedRect> detect_lightbar(const Mat& img_in,const Mat& img_out){
+std::vector<RotatedRect> detect_lightbar(const Mat& img_in){
     //轮廓容器
     std::vector<std::vector<Point>> contours;
     //查找轮廓
@@ -62,8 +62,11 @@ std::vector<RotatedRect> detect_lightbar(const Mat& img_in,const Mat& img_out){
     }
     return bars;
 };
-//3、灯条配对（返回四边形角点）
-std::vector<Point2f> match_lightbars(const std::vector<RotatedRect>& bars){
+//3、绘制装甲板轮廓
+std::vector<std::vector<Point2f>> draw_armors(const std::vector<RotatedRect>& bars){
+    //声明装甲板数组
+    std::vector<std::vector<Point2f>> armors;
+    
     //暴力进行灯条逐一配对
     for(size_t i = 0; i < bars.size();++i){
         for(size_t j = i+1; j < bars.size();++j){
@@ -79,16 +82,28 @@ std::vector<Point2f> match_lightbars(const std::vector<RotatedRect>& bars){
                 continue;
             }
             //角度筛选
-            if(fabs(r1.angle - r2.angle)>20.0f){
+            if(std::fabs(r1.angle - r2.angle)>20.0f){
                 continue;
             }
             //生成四边形角点
             auto vec = [](const RotatedRect& r) -> Point2f{
-                
+                Point2f p[4];
+                r.points(p);
+                Point2f v = (r.size.width > r.size.height) ? (p[1]-p[0]) : (p[2]-p[1]);
+                return v*0.5;
             };
+            
+            std::vector<Point2f> corners = {
+                r1.center + vec(r1),
+                r2.center + vec(r2),
+                r2.center - vec(r2),
+                r1.center - vec(r1)
+            };
+
+            armors.emplace_back(std::move(corners));
         }
     }
-
+    return armors;
 };
 //4、pnp解算
 // 5. 相机坐标 → 机器人坐标
@@ -111,7 +126,8 @@ private:
     void sensor_callback(const sensor_msgs::msg::Image::SharedPtr ros_img){
         Mat cv_img_in = cv_bridge::toCvCopy(ros_img, "bgr8")->image;
         Mat cv_img  = mask_light(cv_img_in);
-        auto bars = detect_lightbar(cv_img,cv_img_in);
+        auto bars = detect_lightbar(cv_img);
+        std::vector<std::vector<Point2f>> all_armors = draw_armors(bars);
     }
 
     void aim_timer_callback(){
